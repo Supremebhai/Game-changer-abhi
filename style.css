@@ -1,7 +1,7 @@
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:"Poppins",sans-serif;min-height:100vh;}
 .bg-overlay{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:16px;
-background-image:linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url("images/stadium-bg.jpg");
+background-image:linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url("stadium-bg.jpg");
 background-size:cover;background-position:center;}
 .card{max-width:420px;width:100%;background:linear-gradient(to bottom,rgba(0,0,0,0.85),rgba(0,0,0,0.75),rgba(0,0,0,0.45));
 border-radius:26px;padding:32px 24px 40px;text-align:center;color:#fff;box-shadow:0 18px 40px rgba(0,0,0,0.6);}
