@@ -10,38 +10,70 @@
 <body>
   <div class="bg-overlay">
     <div class="card">
+      <!-- Profile Image -->
       <div class="avatar-wrapper">
-       <img src="dp.jpg" alt="GAME CHANGER ABHI" class="avatar" />
+        <img src="dp.jpg" alt="GAME CHANGER ABHI" class="avatar" />
       </div>
+
+      <!-- Name and main text -->
       <h1 class="name">GAME CHANGER ABHI</h1>
-      <p class="subtitle">Cricket updates, analysis, and insights for fans</p>
+
+      <!-- 🔁 Updated subtitle -->
+      <p class="subtitle">
+        Indian Number One Cricket Prediction Channel
+      </p>
+
+      <!-- Timer -->
       <div id="timer" class="timer">0:58</div>
       <p class="seconds-left">Seconds Left</p>
-      <a href="https://t.me/+OQFky-gSNaw3NjBl" class="cta-btn">JOIN THE CHANNEL NOW</a>
-      <p class="tagline">Sharing expertise as a dedicated cricket analyst</p>
+
+      <!-- CTA Button (with animation) -->
+      <a href="https://t.me/+OQFky-gSNaw3NjBl" class="cta-btn">
+        JOIN THE CHANNEL NOW
+      </a>
+
+      <!-- Tagline a bit more persuasive -->
+      <p class="tagline">
+        Smart, structured insights to help you read every match like a pro.
+      </p>
+
       <div class="divider"></div>
+
+      <!-- Slight social proof line -->
+      <p class="sub-tagline">
+        Join serious cricket lovers who rely on sharp, data-backed breakdowns before every big game.
+      </p>
+
+      <!-- ⭐ Updated disclaimer – professional + responsible -->
       <p class="disclaimer">
-        Disclaimer: This channel shares cricket updates, analysis, and general
-        information for fans. It does not provide or promote betting or
-        gambling, and no outcomes are guaranteed. Joining or acting on
-        information is at personal discretion—please verify independently and
-        act responsibly.
+        Disclaimer: This channel shares personal opinions, statistics, and cricket insights for educational and entertainment purposes only. 
+        We do <strong>not</strong> offer guaranteed results, fixed matches, or assured profits. We do <strong>not</strong> promote or encourage betting or gambling. 
+        If you choose to place any bets based on your own understanding, you do so at your own risk and discretion&mdash;always follow the laws of your country, 
+        verify information independently, and act responsibly.
       </p>
     </div>
   </div>
+
   <script>
+    // Simple looping countdown
     function startTimer(duration, display) {
       let timer = duration, minutes, seconds;
       setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
+
         seconds = seconds < 10 ? "0" + seconds : seconds;
+
         display.textContent = minutes + ":" + seconds;
-        if (--timer < 0) timer = duration;
+
+        if (--timer < 0) {
+          timer = duration;
+        }
       }, 1000);
     }
+
     window.onload = function () {
-      const countdownSeconds = 59;
+      const countdownSeconds = 59; // 0:59
       const display = document.getElementById("timer");
       startTimer(countdownSeconds, display);
     };
