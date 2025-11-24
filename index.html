@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1143669887510753');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1143669887510753&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GAME CHANGER ABHI</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <div class="bg-overlay">
@@ -32,7 +52,7 @@
         JOIN THE CHANNEL NOW
       </a>
 
-      <!-- Tagline a bit more persuasive -->
+      <!-- Tagline -->
       <p class="tagline">
         Smart, structured insights to help you read every match like a pro.
       </p>
@@ -44,7 +64,7 @@
         Join serious cricket lovers who rely on sharp, data-backed breakdowns before every big game.
       </p>
 
-      <!-- ⭐ Updated disclaimer – professional + responsible -->
+      <!-- ⭐ Disclaimer -->
       <p class="disclaimer">
         Disclaimer: This channel shares personal opinions, statistics, and cricket insights for educational and entertainment purposes only. 
         We do <strong>not</strong> offer guaranteed results, fixed matches, or assured profits. We do <strong>not</strong> promote or encourage betting or gambling. 
@@ -55,7 +75,6 @@
   </div>
 
   <script>
-    // Simple looping countdown
     function startTimer(duration, display) {
       let timer = duration, minutes, seconds;
       setInterval(function () {
@@ -73,7 +92,7 @@
     }
 
     window.onload = function () {
-      const countdownSeconds = 59; // 0:59
+      const countdownSeconds = 59;
       const display = document.getElementById("timer");
       startTimer(countdownSeconds, display);
     };
