@@ -96,6 +96,16 @@
       const display = document.getElementById("timer");
       startTimer(countdownSeconds, display);
     };
-  </script>
+  </script> 
+  <script>
+document.querySelector(".cta-btn").addEventListener("click", function(e) {
+  e.preventDefault();
+  fbq('track', 'Lead');
+  setTimeout(() => {
+    window.location.href = "https://t.me/+OQFky-gSNaw3NjBl";
+  }, 800);
+});
+</script>
+
 </body>
 </html>
